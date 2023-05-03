@@ -1,10 +1,10 @@
-package com.git.Student;
+package com.git.GitHubAllCrud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StudentApplicationTests {
+class GitHubAllCrudApplicationTests {
 
 	@Test
 	void contextLoads() {
