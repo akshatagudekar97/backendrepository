@@ -1,4 +1,4 @@
-package com.git.GitHubAllCrud.controller;
+package com.git.WebserviceCrudGitHub.controller;
 
 import java.util.List;
 
@@ -14,8 +14,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.git.GitHubAllCrud.model.Student;
-import com.git.GitHubAllCrud.serviceI.serviceInte;
+import com.git.WebserviceCrudGitHub.model.Student;
+import com.git.WebserviceCrudGitHub.serviceI.serviceInte;
+
+
 
 @RestController
 public class Homecontroller {
