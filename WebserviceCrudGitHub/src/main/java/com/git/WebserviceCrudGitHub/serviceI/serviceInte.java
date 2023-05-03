@@ -2,6 +2,7 @@ package com.git.WebserviceCrudGitHub.serviceI;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
 
 import com.git.WebserviceCrudGitHub.model.Student;
 

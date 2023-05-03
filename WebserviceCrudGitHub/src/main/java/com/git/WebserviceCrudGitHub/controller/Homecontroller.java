@@ -47,7 +47,7 @@ public class Homecontroller {
 	public ResponseEntity<Student> updatedata(@PathVariable int id, @RequestBody Student s)
 	{
 		se.savestudent(s);
-		return new ResponseEntity<Student>(s,HttpStatus.OK);
+		return new ResponseEntity<>(s,HttpStatus.OK);
 	}
 	
 	@DeleteMapping(value="/deletedata/{id}")
