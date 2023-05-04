@@ -11,3 +11,4 @@ import com.git.WebserviceCrudGitHubException.app.model.Product;
 public interface RepositoryExce extends CrudRepository<Product,Integer>{
 	public List<Product> findByProductName(String productName);
 }
+////

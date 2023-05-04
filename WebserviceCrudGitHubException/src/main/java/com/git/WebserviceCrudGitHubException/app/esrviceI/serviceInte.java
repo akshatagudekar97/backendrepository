@@ -11,3 +11,4 @@ public interface serviceInte {
 	public void deleteproduct(Product pr);
 	public List<Product> searchproduct(String productName);
 }
+//////

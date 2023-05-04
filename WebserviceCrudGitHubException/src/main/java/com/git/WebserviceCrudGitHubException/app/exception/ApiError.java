@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class ApiError {
-    	
+    	//api
 	private int statuscode;
 	private String message;
 	private Date date;
