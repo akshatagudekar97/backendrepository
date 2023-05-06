@@ -26,6 +26,7 @@ public class serviceImple implements serviceInte{
 	public List<Document> getDocument() {
 		List<Document> document=(List<Document>) re.findAll();
 		
+		
 		return document;
 	}
 

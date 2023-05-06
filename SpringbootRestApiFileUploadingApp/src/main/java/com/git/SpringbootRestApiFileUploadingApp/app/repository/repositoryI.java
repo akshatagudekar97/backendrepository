@@ -9,3 +9,4 @@ import com.git.SpringbootRestApiFileUploadingApp.app.model.Document;
 public interface repositoryI extends CrudRepository<Document, Integer>{
 
 }
+

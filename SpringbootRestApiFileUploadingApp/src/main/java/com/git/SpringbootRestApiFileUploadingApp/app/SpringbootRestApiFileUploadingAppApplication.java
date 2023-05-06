@@ -10,4 +10,5 @@ public class SpringbootRestApiFileUploadingAppApplication {
 		SpringApplication.run(SpringbootRestApiFileUploadingAppApplication.class, args);
 	}
 
+	
 }
