@@ -69,6 +69,7 @@ public class Homecontroller {
 	{
 
 		Optional<Applicant> applicatOptional=se.getSingleApplicant(applicantid);
+		
 		if(applicatOptional.isPresent())
 		{
 		ObjectMapper om=new ObjectMapper();
@@ -91,6 +92,7 @@ d.setDocumentid(applicatOptional.get().getAppDoc().getDocumentid());
 			//thow aaplicantNotPresentException
 			return null;
 		}
+		
 		
 		}
 	
