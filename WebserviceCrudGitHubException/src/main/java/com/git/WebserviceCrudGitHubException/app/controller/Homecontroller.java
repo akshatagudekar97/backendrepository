@@ -24,7 +24,7 @@ public class Homecontroller {
 	
 	serviceInte se;
 	
-	@PostMapping(value="/savedata")
+	@PostMapping(value="/savedata" )
 	public ResponseEntity<Product> saveproduct(@RequestBody Product pr)
 	{
 		se.saveproduct(pr);
@@ -60,5 +60,5 @@ public class Homecontroller {
 		List<Product> p=se.searchproduct(productName);
 		return new ResponseEntity<List<Product>>(p,HttpStatus.OK);
 	}
-	////////
+	
 }

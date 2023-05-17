@@ -8,5 +8,4 @@ import com.git.WebserviceCrudGitHubExceptionTask1.app.model.User;
 @Repository
 public interface repository extends CrudRepository<User, Integer>{
 	
-public User saveByUsername(User username);
 }
