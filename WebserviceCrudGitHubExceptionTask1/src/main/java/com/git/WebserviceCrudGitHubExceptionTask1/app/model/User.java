@@ -31,8 +31,7 @@ public class User {
 	  
 	  private String firstname; 
 	  private String lastname; //@Max(10) 
-	  private long  
-	  contactno; 
+	  private long  contactno; 
 	  
 	  private int age;
 	 

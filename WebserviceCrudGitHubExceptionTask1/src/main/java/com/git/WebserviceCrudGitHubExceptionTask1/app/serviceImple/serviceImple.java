@@ -55,7 +55,7 @@ public class serviceImple implements serviceInte
 			                          if (u.getAge() >= 18) 
 			                            {
 			                    	//String.valueOf(u.getContactno()).length(
-			                               if (u.getContactno()!= 10) 
+			                               if (String.valueOf(u.getContactno()).length() == 10) 
 			                                 {
 			                        	
 			                                    re.save(u);
