@@ -15,7 +15,9 @@ public class Defaulter {
 
 	
 	@Id
-	
 	private int defid;
+	private String dname;
+	
+	
 	
 }

@@ -24,6 +24,7 @@ public class EnquiryDetailsController {
 	{
 		edsi.saveEnquiryDetails(e);
 		return new  ResponseEntity<EnquiryDetails>(e,HttpStatus.CREATED);
+		
 	}
 	
 	@GetMapping(value = "/GetAllEnquiryDetails")
