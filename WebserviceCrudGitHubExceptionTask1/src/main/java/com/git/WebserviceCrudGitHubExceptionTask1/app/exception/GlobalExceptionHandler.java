@@ -16,7 +16,9 @@ public class GlobalExceptionHandler {
 	{
 		System.out.println("Global Based Exception Handler");
 		
-		ApiError error=new ApiError(HttpStatus.NOT_FOUND.value(),e.getMessage(),new Date(),HttpStatus.NOT_FOUND, request.getRequestURI());
+		ApiError error=new ApiError(HttpStatus.NOT_FOUND.value(),
+				e.getMessage(),new Date(),HttpStatus.NOT_FOUND,
+		request.getRequestURI());
 	
 	return error;
 	}
