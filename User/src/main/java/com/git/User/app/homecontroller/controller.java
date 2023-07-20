@@ -91,4 +91,18 @@ public class controller {
 		return new ResponseEntity<student>(s, HttpStatus.NO_CONTENT);
 	}
 
+	
+	@GetMapping(value="/search/{id}")
+	public ResponseEntity<List<student>> searchdata(@PathVariable int id)
+	{
+		List<student> list1=se.serchproduct(id);
+		return new ResponseEntity<List<student>>(list1,HttpStatus.OK);
+	}
+	
+	@GetMapping(value="/searchname/{name}")
+	public ResponseEntity<List<student>> seachname(@PathVariable String name)
+	{
+		List<student> l2=se.searchname(name);
+		return new ResponseEntity<List<student>>(l2,HttpStatus.OK);
+	}
 }

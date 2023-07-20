@@ -20,5 +20,9 @@ public interface serviceint {
 
 	public void sendwithattachment(emailsender e, MultipartFile file);
 	
+	public List<student> serchproduct(int id);
+	
+
+	List<student> searchname(String name);
 	
 }

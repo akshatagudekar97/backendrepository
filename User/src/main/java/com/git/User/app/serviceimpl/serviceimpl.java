@@ -5,6 +5,7 @@ import java.util.List;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -62,7 +63,8 @@ public class serviceimpl implements serviceint {
 		re.delete(s);
 
 	}
-
+	
+	
 	@Override
 	public void sendwithattachment(emailsender e, MultipartFile file) {
 		MimeMessage mime=jms.createMimeMessage();
@@ -83,4 +85,19 @@ public class serviceimpl implements serviceint {
 	jms.send(mime);
 
 }
+
+	@Override
+	public List<student> serchproduct(int id) {
+		
+	  List<student>i1=re.findById(id); 
+		return i1;
+	}
+
+	@Override
+	public List<student> searchname(String name) {
+		List<student> list=re.findByName(name);	
+		return list;
+	}
+
+
 }
