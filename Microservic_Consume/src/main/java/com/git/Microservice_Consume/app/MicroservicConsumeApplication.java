@@ -14,7 +14,7 @@ public class MicroservicConsumeApplication {
 		SpringApplication.run(MicroservicConsumeApplication.class, args);
 	}
 
-	@LoadBalanced
+	@LoadBalanced                                                               
 	@Bean
 	public RestTemplate rt()
 	{
