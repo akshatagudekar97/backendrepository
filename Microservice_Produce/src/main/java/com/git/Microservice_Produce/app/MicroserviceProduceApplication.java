@@ -1,0 +1,14 @@
+package com.git.Microservice_Produce.app;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+@EnableEurekaClient
+@SpringBootApplication
+public class MicroserviceProduceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroserviceProduceApplication.class, args);
+	}
+
+}
