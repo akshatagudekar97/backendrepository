@@ -34,7 +34,7 @@ public class Homecontroller {
 		
 	}
 	
-	@PostMapping(value="/sendattchment")
+	@PostMapping(value="/sendattchmentj")
 	public String emailsendattachment(@RequestParam("file") MultipartFile file,@RequestParam("file1") MultipartFile file1,@RequestParam("data")String data)
 	{
 		
