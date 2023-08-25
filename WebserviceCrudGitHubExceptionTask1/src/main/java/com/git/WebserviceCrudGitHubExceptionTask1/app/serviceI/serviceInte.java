@@ -13,4 +13,5 @@ public interface serviceInte {
 	
 	public void deleteuser(User u);
 	
+	
 }

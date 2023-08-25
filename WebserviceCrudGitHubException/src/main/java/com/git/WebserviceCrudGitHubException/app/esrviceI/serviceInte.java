@@ -9,6 +9,6 @@ public interface serviceInte {
 	public List<Product> getproduct();
 	
 	public void deleteproduct(Product pr);
+	
 	public List<Product> searchproduct(String productName);
 }
-//////
