@@ -15,7 +15,7 @@ import com.git.Microservice_Company.app.User.Company;
 import com.git.Microservice_Company.app.User.Employee;
 import com.git.Microservice_Company.app.User.Performance;
 import com.git.Microservice_Company.app.exception.EmployeeNotFoundException;
-import com.git.Microservice_Company.app.external.companyService;
+import com.git.Microservice_Company.app.external.CompanyService;
 import com.git.Microservice_Company.app.repository.repository_interface;
 import com.git.Microservice_Company.app.serviceinterface.Service_Inteface;
 
@@ -26,8 +26,8 @@ public class Service_implements implements Service_Inteface {
 	repository_interface re;
 
 	@Autowired
-	private companyService cs;
-	
+	private CompanyService companyService;
+
 	@Autowired
 	private RestTemplate restTem;
 
@@ -66,6 +66,7 @@ public class Service_implements implements Service_Inteface {
 		List<Performance> p = Arrays.stream(rest).toList();
 
 		List<Performance> perlist = p.stream().map(perform -> {
+
 			/*
 			 * ResponseEntity<Company> forentity =
 			 * restTem.getForEntity("http://COMPANY/Company/" + perform.getCid(),
@@ -75,8 +76,8 @@ public class Service_implements implements Service_Inteface {
 			 * 
 			 * logg.info("reponse Status code: {} ", forentity.getStatusCode());
 			 */
-			Company compa=cs.getCompany(perform.getCid());
-			
+			 Company compa=companyService.getCompany(perform.getCid());
+
 			perform.setCompany(compa);
 
 			return perform;

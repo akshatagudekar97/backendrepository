@@ -13,6 +13,7 @@ public class Myconfig {
 	public RestTemplate erstTem()
 	{
 		
+		
 		return new RestTemplate();
 	}
 }
