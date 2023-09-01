@@ -1,0 +1,31 @@
+server:
+ port: 8083
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/microcompany_yaml
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: Performance
+    
+  jpa:
+   hibernate:
+      ddl-auto: update
+      show-sql: true 
+   properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect   
+ 
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+   fetch-registry: true
+   register-with-eureka: true
+   service-url:
+      defaultZone:  http://localhost:8084/eureka
+
+
+ 

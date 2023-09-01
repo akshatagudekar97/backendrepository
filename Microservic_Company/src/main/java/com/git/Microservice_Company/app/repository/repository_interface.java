@@ -10,5 +10,5 @@ import com.git.Microservice_Company.app.User.Employee;
 @Repository
 public interface repository_interface extends CrudRepository<Employee,Integer>{
 
-	public List<Employee> findByEmpid(int empid);
+	public Employee findByEmpid(int empid);
 }

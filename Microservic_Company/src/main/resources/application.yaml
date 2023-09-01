@@ -7,8 +7,12 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver  # Updated to the correct driver class name
-
-
+  mvc:
+   pathmatch:
+      matching-strategy:  ant-path-matcher
+  application:
+    name: Employee
+ 
   jpa:
     hibernate:
       ddl-auto: update
@@ -16,3 +20,15 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+   fetch-registry: true
+   register-with-eureka: true
+   service-url:
+      defaultZone:  http://localhost:8084/eureka
+
+   

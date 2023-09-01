@@ -4,6 +4,6 @@ import com.git.StreamApi.app.model.customer;
 
 public interface serviceInt {
 
-	void save(customer c);
+	customer save(customer c);
 
 }

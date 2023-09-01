@@ -10,7 +10,7 @@ public interface Service_Inteface {
 	
 	public Iterable<Employee> getEmp();
 	
-	public List<Employee> searchEmp(int empid);
+	public Employee searchEmp(int empid);
 	
 	public void deleteEmp(Employee emp);
 }

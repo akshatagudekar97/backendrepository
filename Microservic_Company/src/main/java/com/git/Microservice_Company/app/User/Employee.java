@@ -1,9 +1,13 @@
 package com.git.Microservice_Company.app.User;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,7 +18,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@Table(name = "Emplouee_user")
+@Table(name = "Employee")
 public class Employee {
 
 	@Id
@@ -30,6 +34,9 @@ public class Employee {
 	
 	@Column(name="About")
 	private String about;
+	
+	@Transient
+	private List<Performance> perform= new ArrayList<Performance>();
 	
 	
 }
