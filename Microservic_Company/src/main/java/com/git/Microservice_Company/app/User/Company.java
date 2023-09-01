@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 public class Company {
-
-	    private String cid;
+//all here feilds
+	        private String cid;
 		private String name;
 		private String location;
 		private String about;
